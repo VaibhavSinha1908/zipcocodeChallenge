@@ -38,10 +38,10 @@ namespace ZipCoCodeChallenge
 
 
             //Use Local SQL to test changes.
-            //services.AddDbContextPool<ZipPayContext>(options =>
-            //{
-            //    options.UseSqlServer(Configuration.GetConnectionString("ZipCo"));
-            //});
+            services.AddDbContextPool<ZipPayContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ZipCo"));
+            });
 
 
             services.AddDbContextPool<ZipPayContext>(options =>

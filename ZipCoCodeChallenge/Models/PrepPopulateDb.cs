@@ -16,7 +16,7 @@ namespace ZipCoCodeChallenge.Models
 
         private static void SeedData(ZipPayContext context)
         {
-            context.Database.Migrate();
+           // context.Database.Migrate();
         }
     }
 }

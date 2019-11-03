@@ -59,21 +59,36 @@ namespace ZipCoCodeChallenge.Controllers
         }
 
 
+        // [Route("accounts")]
+        // [HttpPost]
+        //public IActionResult CreateAccount([FromBody] UserDetails user)
+        //{
+        //    if (!ModelState.IsValid)
+        //        return BadRequest(ModelState);
+
+        //    var response = _accountService.CreateAccount(user);
+        //    if (response == "user doesn't exist")
+        //        return BadRequest(response);
+        //    else if (response == "Can't create user account!")
+        //        return BadRequest(response);
+        //    return Ok(response);
+        //}
+
+
         [Route("accounts")]
         [HttpPost]
-        public IActionResult CreateAccount([FromBody] UserDetails user)
+        public IActionResult CreateAccount([FromBody]string email)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var response = _accountService.CreateAccount(user);
+            var response = _accountService.CreateAccount(email);
             if (response == "user doesn't exist")
                 return BadRequest(response);
             else if (response == "Can't create user account!")
                 return BadRequest(response);
             return Ok(response);
         }
-
 
     }
 }

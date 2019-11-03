@@ -5,7 +5,9 @@ namespace ZipCoCodeChallenge.Interfaces
 {
     public interface IAccountService
     {
-        string CreateAccount(UserDetails user);
+       
+
+        string CreateAccount(string email);
 
         IEnumerable<AccountDetails> GetAllAccounts();
     }
