@@ -34,7 +34,7 @@ docker-compose up
 ## Sample JSON responses:
 
 For creating a new user, post this sample response object:
-
+ 
 ```python
 {
   "name": "Vaibhav Kumar",
