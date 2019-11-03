@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vaibhav\\source\\repos\\ZipCoCodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj": {}
+    "C:\\Users\\vaibhav\\source\\repos\\ZipcoGit\\zipcocodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vaibhav\\source\\repos\\ZipCoCodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj": {
+    "C:\\Users\\vaibhav\\source\\repos\\ZipcoGit\\zipcocodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vaibhav\\source\\repos\\ZipCoCodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj",
+        "projectUniqueName": "C:\\Users\\vaibhav\\source\\repos\\ZipcoGit\\zipcocodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj",
         "projectName": "ZipCoCodeChallenge",
-        "projectPath": "C:\\Users\\vaibhav\\source\\repos\\ZipCoCodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj",
+        "projectPath": "C:\\Users\\vaibhav\\source\\repos\\ZipcoGit\\zipcocodeChallenge\\ZipCoCodeChallenge\\ZipCoCodeChallenge.csproj",
         "packagesPath": "C:\\Users\\vaibhav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vaibhav\\source\\repos\\ZipCoCodeChallenge\\ZipCoCodeChallenge\\obj\\",
+        "outputPath": "C:\\Users\\vaibhav\\source\\repos\\ZipcoGit\\zipcocodeChallenge\\ZipCoCodeChallenge\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
