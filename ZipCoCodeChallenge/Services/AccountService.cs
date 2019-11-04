@@ -18,7 +18,7 @@ namespace ZipCoCodeChallenge.Services
 
             try
             {
-                UserDetails user = _context.Users.FirstOrDefault(x => email == x.EmailAddress);
+                UserDetails user = _context.Users.FirstOrDefault(x => email.ToLower() == x.EmailAddress.ToLower());
 
                 //Check if User exists.
                 if (user == null)

@@ -44,3 +44,4 @@ C:\Users\vaibhav\source\repos\ZipcoGit\zipcocodeChallenge\ZipCoCodeChallenge\obj
 C:\Users\vaibhav\source\repos\ZipcoGit\zipcocodeChallenge\ZipCoCodeChallenge\obj\Debug\netcoreapp2.2\ZipCoCodeChallenge.RazorTargetAssemblyInfo.cache
 C:\Users\vaibhav\source\repos\ZipcoGit\zipcocodeChallenge\ZipCoCodeChallenge\obj\Debug\netcoreapp2.2\ZipCoCodeChallenge.dll
 C:\Users\vaibhav\source\repos\ZipcoGit\zipcocodeChallenge\ZipCoCodeChallenge\obj\Debug\netcoreapp2.2\ZipCoCodeChallenge.pdb
+C:\Users\vaibhav\source\repos\ZipcoGit\zipcocodeChallenge\ZipCoCodeChallenge\obj\Debug\netcoreapp2.2\ZipCoCodeChallenge.csprojAssemblyReference.cache

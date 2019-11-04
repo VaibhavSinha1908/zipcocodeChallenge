@@ -15,7 +15,7 @@ namespace ZipCoCodeChallenge.Services
 
         public string AddUser(UserDetails userDetails)
         {
-            if (_context.Users.Where(x => x.EmailAddress == userDetails.EmailAddress).Count() > 0)
+            if (_context.Users.Where(x => x.EmailAddress.ToLower() == userDetails.EmailAddress.ToLower()).Count() > 0)
             {
                 return "User Exists";
             }
