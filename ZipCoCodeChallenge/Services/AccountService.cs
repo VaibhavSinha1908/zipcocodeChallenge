@@ -20,25 +20,36 @@ namespace ZipCoCodeChallenge.Services
             {
                 UserDetails user = _context.Users.FirstOrDefault(x => email == x.EmailAddress);
 
+                //Check if User exists.
                 if (user == null)
                 {
                     return ("User doesn't exist");
                 }
 
+                //Check for Business use case.
                 if (user.MonthlySalary < 1000)
                 {
                     return "Can't create user account!";
                 }
 
-                var newAccount = new AccountDetails
+                //Check for duplicates
+                if (_context.Accounts.FirstOrDefault(x => x.UserId == user.UserId && x.IsActive == true) != null)
                 {
-                    User = user,
-                    IsActive = true
+                    return "Account Exits";
+                }
+                else
+                {
+                    //create account
+                    var newAccount = new AccountDetails
+                    {
+                        UserId = user.UserId,
+                        IsActive = true
 
-                };
+                    };
 
-                _context.Accounts.Add(newAccount);
-                _context.SaveChanges();
+                    _context.Accounts.Add(newAccount);
+                    _context.SaveChanges();
+                }
 
             }
             catch (System.Exception ex)
@@ -49,42 +60,6 @@ namespace ZipCoCodeChallenge.Services
             return "Account Created!";
         }
 
-
-        public string CreateAccount(UserDetails userDetails)
-        {
-
-            try
-            {
-                UserDetails user = _context.Users.FirstOrDefault(x => userDetails.EmailAddress == x.EmailAddress);
-
-                if (user == null)
-                {
-                    return ("User doesn't exist");
-                }
-
-                if (user.MonthlySalary < 1000)
-                {
-                    return "Can't create user account!";
-                }
-
-                var newAccount = new AccountDetails
-                {
-                    User = user,
-                    IsActive = true
-
-                };
-
-                _context.Accounts.Add(newAccount);
-                _context.SaveChanges();
-
-            }
-            catch (System.Exception ex)
-            {
-                return ex.Message;
-            }
-
-            return "Account Created!";
-        }
 
 
         public IEnumerable<AccountDetails> GetAllAccounts()

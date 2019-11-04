@@ -9,8 +9,11 @@ namespace ZipCoCodeChallenge.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int AccountId { get; set; }
 
-        public UserDetails User { get; set; }
+        
+        public int UserId { get; set; }
 
+
+        public UserDetails User { get; set; }
         public bool IsActive { get; set; }
     }
 }

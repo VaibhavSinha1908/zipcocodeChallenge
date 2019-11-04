@@ -22,13 +22,15 @@ namespace ZipCoCodeChallenge
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var server = Configuration["DBServer"] ?? "ms-sql-server";
-            var port = Configuration["DBPort"] ?? "1433";
-            var user = Configuration["DBUser"] ?? "sa";
-            var password = Configuration["DBPassword"] ?? "ZipPay@1234";
-            var database = Configuration["Database"] ?? "ZipPay";
+            //var server = Configuration["DBServer"] ?? "ms-sql-server";
+            //var port = Configuration["DBPort"] ?? "1433";
+            //var user = Configuration["DBUser"] ?? "sa";
+            //var password = Configuration["DBPassword"] ?? "ZipPay@1234";
+            //var database = Configuration["Database"] ?? "ZipPay";
 
-            string connStr = $"server = {server}, {port}; Initial Catalog = {database}; User ID={user}; Password = {password} ";
+            var connStr = Configuration["Data:ConnectionString"];
+
+            //string connStr = $"server = {server}, {port}; Initial Catalog = {database}; User ID={user}; Password = {password} ";
 
 
 
